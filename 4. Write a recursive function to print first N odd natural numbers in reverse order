@@ -1,0 +1,15 @@
+#include<stdio.h>
+void printN(int);
+int main()
+{
+    int n=8;
+    printN(n);
+    return 0;
+}
+void printN(int n)
+{
+    if(n==0)
+        return;
+    printf("%d ",2*n-1);
+    printN(n-1);
+}
