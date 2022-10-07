@@ -1,0 +1,17 @@
+#include<stdio.h>
+void otod(int);
+int main()
+{
+    int n=421;
+    otod(n);
+    return 0;
+}
+void otod(int n)
+{
+    if(n>0)
+    {
+    printf("%d",n%10);
+      otod(n/10);
+
+    }
+}
